@@ -15,7 +15,16 @@ public class ButtonsController : MonoBehaviour
     {
 
     }
-    
+
+    public void Back()
+    {
+        if (SceneManager.GetActiveScene().buildIndex > 0) //On test si on est pas déjà dans le menu
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+    }
+
+
     public void Exit()
     {
         Application.Quit();
