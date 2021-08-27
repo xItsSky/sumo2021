@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sudo sum sum
+  m_text: SUDO SUM SUM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a1c7d149bae5aac428c33fa09763ef72, type: 2}
   m_sharedMaterial: {fileID: 4349410936901100354, guid: a1c7d149bae5aac428c33fa09763ef72, type: 2}
