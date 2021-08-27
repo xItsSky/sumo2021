@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 6dc9fe86d7a67334c94fb49fb91356b1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Japanese Robot
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d4fab3fe9b278984d965739912c26c51, type: 3}
+  - {fileID: 12800000, guid: 1458679e33edfd44e84d44bea5a8b2a3, type: 3}
+  - {fileID: 12800000, guid: 149eea12eb2d65b4bb2e6e0fb28de3bb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
