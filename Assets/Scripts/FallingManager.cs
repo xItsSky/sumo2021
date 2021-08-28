@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FallingManager : MonoBehaviour
 {
+    public Move movmentManagerRed, movmentManagerBlue;
+    public Text message;
     private string[] players = { "Sumo left", "Sumo right" };
     private bool[] playersStatus = { false, false };
 
@@ -16,23 +19,29 @@ public class FallingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // blue
         if (playersStatus[0] == true)
         {
-            // Do somethings
+            this.movmentManagerRed.setMove(false);
+            byte[] bytes = System.Text.Encoding.Default.GetBytes("Le joueur rouge a gagne !");
+            this.message.text = System.Text.Encoding.UTF8.GetString(bytes);
         }
+        // red
         else if (playersStatus[1] == true)
         {
-            // Do somethings else
+            this.movmentManagerBlue.setMove(false);
+            byte[] bytes = System.Text.Encoding.Default.GetBytes("Le joueur bleu a gagne !");
+            this.message.text = System.Text.Encoding.UTF8.GetString(bytes);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject collisionWith = collision.gameObject;
-        print("Collide !");
-        if(this.contains(name)) {
-            playersStatus[this.indexOf(name)] = true;
-            Destroy(gameObject);
+        print("Collide with " + collisionWith.name);
+        if (this.contains(collisionWith.name)) {
+            playersStatus[this.indexOf(collisionWith.name)] = true;
+            Destroy(collisionWith);
             print("destroy !");
         }
     }

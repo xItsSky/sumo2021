@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: 1302469755670559746
     second: sumo_red_2
+  - first:
+      213: 6243838346774716606
+    second: sumo_red_3
+  - first:
+      213: 1135195544063393859
+    second: sumo_red_4
+  - first:
+      213: -434095047287990938
+    second: sumo_red_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,10 +160,10 @@ TextureImporter:
       name: sumo_red_0
       rect:
         serializedVersion: 2
-        x: 388
-        y: 186
-        width: 158
-        height: 314
+        x: 51
+        y: 191
+        width: 156
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +181,10 @@ TextureImporter:
       name: sumo_red_1
       rect:
         serializedVersion: 2
-        x: 552
-        y: 187
-        width: 158
-        height: 314
+        x: 217
+        y: 191
+        width: 156
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +202,10 @@ TextureImporter:
       name: sumo_red_2
       rect:
         serializedVersion: 2
-        x: 722
-        y: 187
-        width: 156
-        height: 316
+        x: 388
+        y: 186
+        width: 158
+        height: 314
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,6 +215,69 @@ TextureImporter:
       bones: []
       spriteID: 20cfe6d875d431210800000000000000
       internalID: 1302469755670559746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sumo_red_3
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 187
+        width: 158
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0287625e196a650800000000000000
+      internalID: 6243838346774716606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sumo_red_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 191
+        width: 156
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3404182355601cf00800000000000000
+      internalID: 1135195544063393859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sumo_red_5
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 187
+        width: 164
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66594abbad8c9f9f0800000000000000
+      internalID: -434095047287990938
       vertices: []
       indices: 
       edges: []
