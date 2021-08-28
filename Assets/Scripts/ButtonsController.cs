@@ -9,7 +9,7 @@ public class ButtonsController : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("SamScene");
     }
     public void Option()
     {
