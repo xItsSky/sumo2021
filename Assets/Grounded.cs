@@ -8,7 +8,7 @@ public class Grounded : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Sumo = gameObject.transform.parent.gameObject;
+        Sumo = gameObject.transform.gameObject;
     }
 
     // Update is called once per frame
@@ -21,7 +21,11 @@ public class Grounded : MonoBehaviour
     {
         if(collision.collider.name == "Ground")
         {
-            Sumo.GetComponent<Move>().isGrounded = true;
+            if (Sumo != null && Sumo.GetComponent<Move>() != null)
+            {
+                Sumo.GetComponent<Move>().isGrounded = true;
+
+            }
         }
     }
 
@@ -29,7 +33,11 @@ public class Grounded : MonoBehaviour
     {
         if (collision.collider.name == "Ground")
         {
-            Sumo.GetComponent<Move>().isGrounded = false;
+            if (Sumo != null && Sumo.GetComponent<Move>() != null)
+            {
+                Sumo.GetComponent<Move>().isGrounded = false;
+
+            }
         }
     }
 }
