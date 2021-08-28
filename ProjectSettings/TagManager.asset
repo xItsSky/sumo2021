@@ -7,6 +7,7 @@ TagManager:
   - sumo_left
   - sumo_right
   - Sumo
+  - bol
   layers:
   - Default
   - TransparentFX
