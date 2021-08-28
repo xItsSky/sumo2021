@@ -53,7 +53,7 @@ public class FallingManager : MonoBehaviour
                 playersStatus[0] = false;
 
                 this.movmentManagerRed.setMove(false);
-
+                Winner.winner = WinnerEnum.BLUE;
                 SceneManager.LoadScene("Victoire");
 
             }
@@ -84,7 +84,7 @@ public class FallingManager : MonoBehaviour
                 playersStatus[1] = false;
 
                 this.movmentManagerBlue.setMove(false);
-
+                Winner.winner = WinnerEnum.RED;
                 SceneManager.LoadScene("Victoire");
             }
 
