@@ -58,14 +58,14 @@ public class Move : MonoBehaviour
         {
             if (Input.GetKeyDown("up") && isGrounded == true)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 6f), ForceMode2D.Impulse);
             }
         }
         else if (gameObject.name == "Sumo left")
         {
             if (Input.GetKeyDown("z") && isGrounded == true)
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 6f), ForceMode2D.Impulse);
             }
         }
 

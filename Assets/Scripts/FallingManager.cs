@@ -120,6 +120,11 @@ public class FallingManager : MonoBehaviour
 
             print("destroy !");
         }
+
+        if (collisionWith.tag == "barril") {
+            GameObject.Find("Main Camera").GetComponent<SpawnBarril>().moving = false;
+            Destroy(collisionWith);
+        }
     }
 
     private bool contains(string name)

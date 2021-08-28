@@ -8,6 +8,7 @@ TagManager:
   - sumo_right
   - Sumo
   - bol
+  - barril
   layers:
   - Default
   - TransparentFX
