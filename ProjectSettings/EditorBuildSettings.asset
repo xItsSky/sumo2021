@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/BabyBoss.unity
+    guid: 63588be36745a214aae27263916760a8
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 2eb5af8557580d54a89b0f54d200acf5
   - enabled: 1

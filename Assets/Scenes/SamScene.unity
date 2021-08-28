@@ -969,6 +969,7 @@ GameObject:
   - component: {fileID: 513554144}
   - component: {fileID: 513554146}
   - component: {fileID: 513554145}
+  - component: {fileID: 513554147}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1163,8 +1164,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barril: {fileID: 6660393710185095297, guid: 85cc45f8c3e484845955cc5e67cca75d, type: 3}
+  barrilLTR: {fileID: 1781958490051119626, guid: 9f7a29f8e0661194ebe0c82018843106, type: 3}
   moving: 0
   nb: -11
+--- !u!114 &513554147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513554140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673c054753c55df4ba50b540ecee31e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &614457183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,7 +1538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c84b80b0a7206b4ba305b4bb32ce718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countBarril: 0
 --- !u!1 &642453210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,7 +2099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007271981}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.78, y: 0.8, z: 0}
+  m_LocalPosition: {x: -24.3, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2345,7 +2358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366539216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.42, y: -3.15, z: 0}
+  m_LocalPosition: {x: 29, y: -3.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2710,7 +2723,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c84b80b0a7206b4ba305b4bb32ce718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countBarril: 0
 --- !u!1 &1477019321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3317,7 +3329,7 @@ PolygonCollider2D:
       - {x: 3.65946, y: 0.2530939}
       - {x: 3.7686667, y: 0.29377767}
       - {x: 3.7677016, y: 0.4282449}
-      - {x: -3.8334668, y: 0.48333466}
+      - {x: -3.8334668, y: 0.53828573}
       - {x: -3.6779232, y: 0.40864477}
       - {x: -3.542523, y: 0.275}
       - {x: -3.4861314, y: 0.2358256}

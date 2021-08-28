@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SpawnBarril : MonoBehaviour {
     public GameObject barril;
+    public GameObject barrilLTR;
 
     public bool moving = false;
 
@@ -17,10 +18,11 @@ public class SpawnBarril : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (moving) {
-            if (nb == -11)
-                GameObject.FindGameObjectWithTag("barril").transform.position = new Vector3(GameObject.FindGameObjectWithTag("barril").transform.position.x + 6f * Time.deltaTime, GameObject.FindGameObjectWithTag("barril").transform.position.y, GameObject.FindGameObjectWithTag("barril").transform.position.z);
-            else
+            if (nb == -11) {
+                GameObject.FindGameObjectWithTag("barrilTR").transform.position = new Vector3(GameObject.FindGameObjectWithTag("barrilTR").transform.position.x + 6f * Time.deltaTime, GameObject.FindGameObjectWithTag("barrilTR").transform.position.y, GameObject.FindGameObjectWithTag("barrilTR").transform.position.z);
+            } else {
                 GameObject.FindGameObjectWithTag("barril").transform.position = new Vector3(GameObject.FindGameObjectWithTag("barril").transform.position.x - 6f * Time.deltaTime, GameObject.FindGameObjectWithTag("barril").transform.position.y, GameObject.FindGameObjectWithTag("barril").transform.position.z);
+            }
         }
     }
 
@@ -32,7 +34,12 @@ public class SpawnBarril : MonoBehaviour {
         else
             nb = 12;
 
+        if (nb == -11) {
+            Instantiate(barrilLTR, new Vector3(nb, 24, -15), Quaternion.identity);
+        } else {
             Instantiate(barril, new Vector3(nb, 24, -15), Quaternion.identity);
+        }
+        
     }
 
     IEnumerator SpawnBarrilEnum() {

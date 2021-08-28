@@ -19,5 +19,7 @@ public class MoveBarril : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "barril")
             GameObject.Find("Main Camera").GetComponent<SpawnBarril>().moving = true;
+        if (collision.gameObject.tag == "barrilTR")
+            GameObject.Find("Main Camera").GetComponent<SpawnBarril>().moving = true;
     }
 }

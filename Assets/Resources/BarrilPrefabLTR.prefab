@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6660393710185095297
+--- !u!1 &1781958490051119626
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1394979347010010678}
-  - component: {fileID: 4301829099904456507}
-  - component: {fileID: 5321264455280622594}
-  - component: {fileID: 8086770567637748517}
+  - component: {fileID: 6309340044299637949}
+  - component: {fileID: 9180477625294355888}
+  - component: {fileID: 940228473199318665}
+  - component: {fileID: 4466455887596809522}
   m_Layer: 0
-  m_Name: BarrilPrefab
-  m_TagString: barril
+  m_Name: BarrilPrefabLTR
+  m_TagString: barrilTR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1394979347010010678
+--- !u!4 &6309340044299637949
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6660393710185095297}
+  m_GameObject: {fileID: 1781958490051119626}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1, y: 24.6, z: -58.65}
+  m_LocalPosition: {x: -2, y: 24, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
-  - {fileID: 7597972940069912234}
+  - {fileID: 3289278261058376737}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &4301829099904456507
+--- !u!50 &9180477625294355888
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6660393710185095297}
+  m_GameObject: {fileID: 1781958490051119626}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -55,17 +55,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!95 &5321264455280622594
+--- !u!95 &940228473199318665
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6660393710185095297}
+  m_GameObject: {fileID: 1781958490051119626}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b4ba8c0ff283d8a4c90c7559af5a57ff, type: 2}
+  m_Controller: {fileID: 9100000, guid: 53c0f957f010fe74a9efb163863d5f2d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -74,23 +74,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!58 &8086770567637748517
+--- !u!58 &4466455887596809522
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6660393710185095297}
+  m_GameObject: {fileID: 1781958490051119626}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.020880222, y: -0.34082198}
+  m_Offset: {x: 0.000003695488, y: -0.36941874}
   serializedVersion: 2
-  m_Radius: 1.5233667
---- !u!1 &8853305489284868876
+  m_Radius: 1.7049879
+--- !u!1 &4470371747052257671
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,8 +98,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7597972940069912234}
-  - component: {fileID: 665206472783006883}
+  - component: {fileID: 3289278261058376737}
+  - component: {fileID: 5615980796296603176}
   m_Layer: 0
   m_Name: Barril
   m_TagString: Untagged
@@ -107,27 +107,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7597972940069912234
+--- !u!4 &3289278261058376737
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8853305489284868876}
+  m_GameObject: {fileID: 4470371747052257671}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0517087, y: -0.40000153, z: 58.30361}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1394979347010010678}
+  m_Father: {fileID: 6309340044299637949}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &665206472783006883
+--- !u!212 &5615980796296603176
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8853305489284868876}
+  m_GameObject: {fileID: 4470371747052257671}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
