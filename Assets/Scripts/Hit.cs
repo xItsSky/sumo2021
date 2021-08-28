@@ -41,4 +41,15 @@ public class Hit : MonoBehaviour
         else if(target == "red")
             this.blueMovmentManager.setForce(this.force);
     }
+
+    public void setForce(float duree) {
+        force += 0.3f;
+
+        StartCoroutine(resetTiming(duree));
+    }
+
+    IEnumerator resetTiming(float duree) {
+        yield return new WaitForSeconds(duree);
+        force -= 0.3f;
+    }
 }

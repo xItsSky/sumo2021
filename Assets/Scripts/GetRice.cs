@@ -25,7 +25,9 @@ public class GetRice : MonoBehaviour
             sc += 0.2f;
 
             gameObject.transform.localScale = new Vector3(sc, sc, 1);
-            gameObject.GetComponent<Rigidbody2D>().mass += 0.3f;
+            gameObject.GetComponent<Rigidbody2D>().mass += 1f;
+            gameObject.GetComponent<Move>().speed -= 1;
+            gameObject.GetComponent<Hit>().setForce(2);
 
             StartCoroutine(ResetScale());
         }
@@ -35,7 +37,9 @@ public class GetRice : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         sc -= 0.2f;
+
         gameObject.transform.localScale = new Vector3(sc, sc, 1);
-        gameObject.GetComponent<Rigidbody2D>().mass -= 0.3f;
+        gameObject.GetComponent<Rigidbody2D>().mass -= 1f;
+        gameObject.GetComponent<Move>().speed += 1;
     }
 }

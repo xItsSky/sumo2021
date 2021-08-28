@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6652751344411227494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.01, y: -11.9, z: 14.376771}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalPosition: {x: -0.15, y: -0.1, z: 14.376771}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 6652751345317602882}
   m_RootOrder: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 32767
-  m_Sprite: {fileID: 21300000, guid: 11e808dcd01d24946890498cb8e16a3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d7a2bcd577ed564fbe3fc51ac444dd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -93,8 +93,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6652751345317602882}
   - component: {fileID: 6652751345317602883}
-  - component: {fileID: 6652751345317602880}
-  - component: {fileID: 6652751345317602885}
+  - component: {fileID: 8216418573548515675}
+  - component: {fileID: 6783308154373512983}
   m_Layer: 0
   m_Name: BolDeRiz
   m_TagString: bol
@@ -110,7 +110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6652751345317602881}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.06, y: 15.72, z: -15.64}
+  m_LocalPosition: {x: -2.16, y: 17, z: -15.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6652751344411227497}
@@ -138,8 +138,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &6652751345317602880
-BoxCollider2D:
+--- !u!60 &8216418573548515675
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -151,7 +151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.0005761, y: -11.870102}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -161,11 +161,20 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.944216, y: 1.8332825}
-  m_EdgeRadius: 0
---- !u!61 &6652751345317602885
-BoxCollider2D:
+  m_Points:
+    m_Paths:
+    - - {x: 0.092787266, y: 0.18811035}
+      - {x: -0.21543574, y: 0.12898636}
+      - {x: -0.5249896, y: -0.0024490356}
+      - {x: -0.64795303, y: -0.10188484}
+      - {x: -0.54696083, y: -0.3810215}
+      - {x: -0.23983234, y: -0.64663875}
+      - {x: 0.12504053, y: -0.6564274}
+      - {x: 0.3210218, y: -0.46106315}
+      - {x: 0.46651924, y: -0.1685257}
+      - {x: 0.4755212, y: 0.06545061}
+--- !u!60 &6783308154373512983
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -177,7 +186,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.98026466, y: -11.871134}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -187,6 +196,17 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.7109265, y: 1.6476631}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.4987321, y: 0.16491318}
+      - {x: -0.11105013, y: 0.22177315}
+      - {x: -0.49019432, y: 0.10193634}
+      - {x: -0.6211543, y: 0.032297134}
+      - {x: -0.64795303, y: -0.10188484}
+      - {x: -0.72511435, y: -0.079826355}
+      - {x: -0.62814975, y: -0.39261818}
+      - {x: -0.21663564, y: -0.73942554}
+      - {x: 0.13663888, y: -0.7492142}
+      - {x: 0.4602028, y: -0.39147162}
+      - {x: 0.5361098, y: -0.09893417}
+      - {x: 0.4755212, y: 0.06545061}
