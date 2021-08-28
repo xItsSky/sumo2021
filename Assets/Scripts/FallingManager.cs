@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FallingManager : MonoBehaviour
 {
+    public Rigidbody2D[] playersBodies;
     private string[] players = { "Sumo left", "Sumo right" };
     private bool[] playersStatus = { false, false };
 
@@ -18,7 +19,7 @@ public class FallingManager : MonoBehaviour
     {
         if (playersStatus[0] == true)
         {
-            // Do somethings
+            //
         }
         else if (playersStatus[1] == true)
         {
@@ -29,10 +30,10 @@ public class FallingManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject collisionWith = collision.gameObject;
-        print("Collide !");
-        if(this.contains(name)) {
-            playersStatus[this.indexOf(name)] = true;
-            Destroy(gameObject);
+        print("Collide with " + collisionWith.name);
+        if (this.contains(collisionWith.name)) {
+            playersStatus[this.indexOf(collisionWith.name)] = true;
+            Destroy(collisionWith);
             print("destroy !");
         }
     }
