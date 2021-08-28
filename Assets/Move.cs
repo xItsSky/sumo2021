@@ -15,17 +15,17 @@ public class Move : MonoBehaviour
     void Update()
     {
 
-        Jump();
+        this.Jump();
         this.flip(Input.GetAxis("Horizontal"));
+        this.anim(Input.GetAxis("Horizontal"));
+        this.move(Input.GetAxis("Horizontal"));
 
-        if (Input.GetAxis("Horizontal") != 0)
-            animator.SetBool("isWalking", true);
-        else
-            animator.SetBool("isWalking", false);
+    }
 
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+    void move(float move)
+    {
+        Vector3 movement = new Vector3(move, 0f, 0f);
         transform.position += movement * Time.deltaTime * speed;
-
     }
 
     void Jump()
@@ -34,6 +34,14 @@ public class Move : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
         }
+    }
+
+    void anim(float move)
+    {
+        if (move != 0)
+            this.animator.SetBool("isWalking", true);
+        else
+            this.animator.SetBool("isWalking", false);
     }
 
     void flip(float move)
