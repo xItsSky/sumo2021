@@ -19,17 +19,36 @@ public class Grounded : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.collider.name == "Ground")
+        if(collision.collider.name == "Ground" || collision.collider.tag == "Sumo")
         {
-            Sumo.GetComponent<Move>().isGrounded = true;
+
+            if (collision.collider.tag == "Sumo")
+            {
+                Sumo.GetComponent<Move>().isCollision = true;
+            }
+            else
+            {
+                Sumo.GetComponent<Move>().isGrounded = true;
+            }
+
+            
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.name == "Ground")
+        if (collision.collider.name == "Ground" || collision.collider.tag == "Sumo")
         {
-            Sumo.GetComponent<Move>().isGrounded = false;
+
+            if(collision.collider.tag == "Sumo")
+            {
+                Sumo.GetComponent<Move>().isCollision = false;
+            }
+            else
+            {
+                Sumo.GetComponent<Move>().isGrounded = false;
+            }
+
         }
     }
 }
