@@ -22,12 +22,14 @@ public class FallingManager : MonoBehaviour
         if (playersStatus[0] == true)
         {
             this.movmentManagerRed.setMove(false);
-            this.message.text = "Le joueur rouge ? gagn? !";
+            byte[] bytes = System.Text.Encoding.Default.GetBytes("Le joueur rouge a gagne !");
+            this.message.text = System.Text.Encoding.UTF8.GetString(bytes);
         }
         else if (playersStatus[1] == true)
         {
             this.movmentManagerBlue.setMove(false);
-            this.message.text = "Le joueur bleu ? gagn? !";
+            byte[] bytes = System.Text.Encoding.Default.GetBytes("Le joueur bleu a gagne !");
+            this.message.text = System.Text.Encoding.UTF8.GetString(bytes);
         }
     }
 
