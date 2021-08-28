@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: -2879007830790329286
     second: sumo_blue_2
+  - first:
+      213: -6013722412523838475
+    second: sumo_blue_3
+  - first:
+      213: 8358154841019607429
+    second: sumo_blue_4
+  - first:
+      213: 1267697641789600462
+    second: sumo_blue_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,10 +160,10 @@ TextureImporter:
       name: sumo_blue_0
       rect:
         serializedVersion: 2
-        x: 388
-        y: 186
-        width: 158
-        height: 314
+        x: 51
+        y: 191
+        width: 156
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +181,10 @@ TextureImporter:
       name: sumo_blue_1
       rect:
         serializedVersion: 2
-        x: 552
-        y: 187
-        width: 158
-        height: 314
+        x: 217
+        y: 191
+        width: 156
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +202,10 @@ TextureImporter:
       name: sumo_blue_2
       rect:
         serializedVersion: 2
-        x: 722
-        y: 187
-        width: 156
-        height: 316
+        x: 388
+        y: 186
+        width: 158
+        height: 314
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,6 +215,69 @@ TextureImporter:
       bones: []
       spriteID: a3cac2ca1a5bb08d0800000000000000
       internalID: -2879007830790329286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sumo_blue_3
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 187
+        width: 158
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f326bfe357fa8ca0800000000000000
+      internalID: -6013722412523838475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sumo_blue_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 191
+        width: 156
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5896fa46b812ef370800000000000000
+      internalID: 8358154841019607429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sumo_blue_5
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 187
+        width: 164
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec23875e944c79110800000000000000
+      internalID: 1267697641789600462
       vertices: []
       indices: 
       edges: []

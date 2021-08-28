@@ -9,32 +9,41 @@ public class Move : MonoBehaviour
     public bool isGrounded = false;
     public bool isCollision = false;
     private bool canMove = true;
+    public bool facingRight;
+    public Animator animator;
+    public string axis;
 
     void Start()
     {
-
+        if (this.gameObject.name == "Sumo right")
+            this.flip(-1);
     }
 
     void Update()
     {
+        this.move();
+        Collision();
+    }
 
-        Jump();
-
+    void move()
+    {
         Vector3 movement = new Vector3(0f, 0f, 0f);
 
+        float move = 0;
         if (gameObject.name == "Sumo right" && canMove)
         {
-            movement = new Vector3(Input.GetAxis("Horizontal right"), 0f, 0f);
+            move = Input.GetAxis("Horizontal right");
         }
         else if (gameObject.name == "Sumo left" && canMove)
         {
-            movement = new Vector3(Input.GetAxis("Horizontal left"), 0f, 0f);
+            move = Input.GetAxis("Horizontal left");
         }
 
+        movement = new Vector3(move, 0f, 0f);
         transform.position += movement * Time.deltaTime * speed;
-
-        Collision();
-
+        this.flip(move);
+        this.anim(move);
+        this.Jump();
     }
 
     void Jump()
@@ -90,4 +99,25 @@ public class Move : MonoBehaviour
 
     }
 
+    void anim(float move)
+    {
+        if (move != 0)
+            this.animator.SetBool("isWalking", true);
+        else
+            this.animator.SetBool("isWalking", false);
+    }
+
+    void flip(float move)
+    {
+        if (move < 0)
+        {
+            this.facingRight = false;
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
+        else if(move > 0)
+        {
+            this.facingRight = true;
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
 }
