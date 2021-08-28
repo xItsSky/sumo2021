@@ -26,7 +26,7 @@ public class Hit : MonoBehaviour
         {
             this.animator.Play("blue_hit");
         }
-        if(Input.GetKeyDown(KeyCode.KeypadEnter) && this.gameObject.name == "Sumo left")
+        if(Input.GetKeyDown(KeyCode.DownArrow) && this.gameObject.name == "Sumo left")
         {
             this.animator.Play("red_hit");
         }

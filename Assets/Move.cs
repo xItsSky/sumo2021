@@ -120,4 +120,9 @@ public class Move : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
+
+    public void setMove(bool value)
+    {
+        this.canMove = value;
+    }
 }

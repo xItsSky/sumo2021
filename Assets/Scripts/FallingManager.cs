@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FallingManager : MonoBehaviour
 {
-    public Rigidbody2D[] playersBodies;
+    public Move movmentManagerRed, movmentManagerBlue;
+    public Text message;
     private string[] players = { "Sumo left", "Sumo right" };
     private bool[] playersStatus = { false, false };
 
@@ -19,11 +21,13 @@ public class FallingManager : MonoBehaviour
     {
         if (playersStatus[0] == true)
         {
-            //
+            this.movmentManagerRed.setMove(false);
+            this.message.text = "Le joueur rouge ? gagn? !";
         }
         else if (playersStatus[1] == true)
         {
-            // Do somethings else
+            this.movmentManagerBlue.setMove(false);
+            this.message.text = "Le joueur bleu ? gagn? !";
         }
     }
 
