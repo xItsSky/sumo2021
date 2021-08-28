@@ -22,15 +22,17 @@ public class Grounded : MonoBehaviour
         if(collision.collider.name == "Ground" || collision.collider.tag == "Sumo")
         {
 
-            if (collision.collider.tag == "Sumo")
+            if (Sumo != null && Sumo.GetComponent<Move>() != null)
             {
-                Sumo.GetComponent<Move>().isCollision = true;
+                if (collision.collider.tag == "Sumo")
+                {
+                    Sumo.GetComponent<Move>().isCollision = true;
+                }
+                else
+                {
+                    Sumo.GetComponent<Move>().isGrounded = true;
+                }
             }
-            else
-            {
-                Sumo.GetComponent<Move>().isGrounded = true;
-            }
-
             
         }
     }
@@ -40,15 +42,20 @@ public class Grounded : MonoBehaviour
         if (collision.collider.name == "Ground" || collision.collider.tag == "Sumo")
         {
 
-            if(collision.collider.tag == "Sumo")
+            if (Sumo != null && Sumo.GetComponent<Move>() != null)
             {
-                Sumo.GetComponent<Move>().isCollision = false;
-            }
-            else
-            {
-                Sumo.GetComponent<Move>().isGrounded = false;
+
+                if (collision.collider.tag == "Sumo")
+                {
+                    Sumo.GetComponent<Move>().isCollision = false;
+                }
+                else
+                {
+                    Sumo.GetComponent<Move>().isGrounded = false;
+                }
             }
 
         }
+
     }
 }
