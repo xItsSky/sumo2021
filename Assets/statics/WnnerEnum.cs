@@ -1,6 +1,8 @@
 ﻿using System;
 public enum WinnerEnum
 {
-    BLUE,
-    RED
+    BLUE = 0,
+    RED = 1
+
+    
 }
