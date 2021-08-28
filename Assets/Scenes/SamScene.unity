@@ -1453,8 +1453,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  defaultForce: 0.25
-  force: 0.25
+  defaultForce: 0.4
+  force: 0.4
   isGrounded: 0
   isCollision: 0
   facingRight: 0
@@ -2621,8 +2621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  defaultForce: 0.25
-  force: 0.25
+  defaultForce: 0.4
+  force: 0.4
   isGrounded: 0
   isCollision: 0
   facingRight: 0
