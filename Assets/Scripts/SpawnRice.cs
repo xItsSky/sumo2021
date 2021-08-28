@@ -24,7 +24,7 @@ public class SpawnRice : MonoBehaviour
     IEnumerator SpawnRiceEnum() {
         Spawn();
 
-        yield return new WaitForSeconds(Random.Range(5, 8));
+        yield return new WaitForSeconds(Random.Range(3, 8));
 
         StartCoroutine(SpawnRiceEnum());
     }
