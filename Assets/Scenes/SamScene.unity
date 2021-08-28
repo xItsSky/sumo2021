@@ -1110,7 +1110,7 @@ Animator:
   m_GameObject: {fileID: 621036051}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dea6e62c5902b4fa2ae0b80516fb917b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6aa2af352cdd94c89b64f00064c79f4f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1276,9 +1276,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 621036051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead3b9ccb7be6274ea2f606b7eb08cf0, type: 3}
+  m_Script: {fileID: 11500000, guid: 321f55e89f241a84dab21ff49227a936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  force: 0.1
+  isGrounded: 0
+  isCollision: 0
+  facingRight: 0
+  animator: {fileID: 621036052}
+  axis: 
 --- !u!50 &621036058
 Rigidbody2D:
   serializedVersion: 4
@@ -2235,7 +2242,7 @@ Animator:
   m_GameObject: {fileID: 1431179395}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dea6e62c5902b4fa2ae0b80516fb917b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7d64f2fffdad44515b105e5f2f9b4181, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2288,9 +2295,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1431179395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead3b9ccb7be6274ea2f606b7eb08cf0, type: 3}
+  m_Script: {fileID: 11500000, guid: 321f55e89f241a84dab21ff49227a936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 5
+  force: 0.1
+  isGrounded: 0
+  isCollision: 0
+  facingRight: 0
+  animator: {fileID: 1431179398}
+  axis: 
 --- !u!114 &1431179402
 MonoBehaviour:
   m_ObjectHideFlags: 0

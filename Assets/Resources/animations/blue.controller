@@ -75,7 +75,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sumo
+  m_Name: blue
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: isWalking
@@ -167,7 +167,7 @@ AnimatorStateMachine:
     m_Position: {x: 70, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -748454800949425042}
-    m_Position: {x: -140, y: 130, z: 0}
+    m_Position: {x: -60, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -545532188905072641}
     m_Position: {x: -360, y: 130, z: 0}
