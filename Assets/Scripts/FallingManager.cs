@@ -19,12 +19,14 @@ public class FallingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // blue
         if (playersStatus[0] == true)
         {
             this.movmentManagerRed.setMove(false);
             byte[] bytes = System.Text.Encoding.Default.GetBytes("Le joueur rouge a gagne !");
             this.message.text = System.Text.Encoding.UTF8.GetString(bytes);
         }
+        // red
         else if (playersStatus[1] == true)
         {
             this.movmentManagerBlue.setMove(false);

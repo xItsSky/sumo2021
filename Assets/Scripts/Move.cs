@@ -5,24 +5,29 @@ using UnityEngine;
 public class Move : MonoBehaviour
 {
     public float speed = 5f;
-    public float force = 0.1f;
+    public float defaultForce = 0.1f;
+    public float force;
     public bool isGrounded = false;
     public bool isCollision = false;
     private bool canMove = true;
     public bool facingRight;
     public Animator animator;
     public string axis;
+    public bool hasBeanHit = false;
 
     void Start()
     {
         if (this.gameObject.name == "Sumo right")
             this.flip(-1);
+
+        this.force = defaultForce;
     }
 
     void Update()
     {
         this.move();
         Collision();
+        checkForce();
     }
 
     void move()
@@ -121,8 +126,30 @@ public class Move : MonoBehaviour
         }
     }
 
+    void checkForce()
+    {
+        if(this.hasBeanHit)
+        {
+            this.hasBeanHit = false;
+            StartCoroutine(resetForce());
+        }
+    }
+
     public void setMove(bool value)
     {
         this.canMove = value;
+    }
+
+    public void setForce(float value)
+    {
+        this.hasBeanHit = true;
+        this.force = value;
+    }
+
+    IEnumerator resetForce()
+    {
+        yield return new WaitForSecondsRealtime(0.30f);
+        this.force = this.defaultForce;
+        print("Force reset to " + this.force);
     }
 }

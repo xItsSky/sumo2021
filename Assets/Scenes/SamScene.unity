@@ -1425,6 +1425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da0da4d079a174bfdbf0c5e55973b91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blueMovmentManager: {fileID: 1431179401}
+  redMovmentManager: {fileID: 621036057}
+  force: 1
 --- !u!114 &621036056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,12 +1453,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  force: 0.1
+  defaultForce: 0.4
+  force: 0.4
   isGrounded: 0
   isCollision: 0
   facingRight: 0
   animator: {fileID: 621036052}
   axis: 
+  hasBeanHit: 0
 --- !u!50 &621036058
 Rigidbody2D:
   serializedVersion: 4
@@ -2616,12 +2621,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  force: 0.1
+  defaultForce: 0.4
+  force: 0.4
   isGrounded: 0
   isCollision: 0
   facingRight: 0
   animator: {fileID: 1431179398}
   axis: 
+  hasBeanHit: 0
 --- !u!114 &1431179402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2646,6 +2653,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da0da4d079a174bfdbf0c5e55973b91c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blueMovmentManager: {fileID: 1431179401}
+  redMovmentManager: {fileID: 621036057}
+  force: 1
 --- !u!1 &1477019321
 GameObject:
   m_ObjectHideFlags: 0
