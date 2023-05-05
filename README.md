@@ -1,5 +1,7 @@
 # Sumo SumSum
 
+![image](https://user-images.githubusercontent.com/28018309/236574398-2ad2f9ac-5229-44d8-b294-8dbba3306edb.png)
+
 ## Description
 
 This is a Unity game created during the BBQ Game Jam 2021.
